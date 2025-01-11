@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback | ATL PMSA</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://haseefmuhammed.github.io/Haseef-Swift/haseef-swift-og.css">
+  <style>
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1 class="text-center mt-4 text-white">Selfie with PMSA</h1>
+  
+  <!-- Webcam and Capture Button -->
+  <div id="camera-section" class="camera-container">
+    <video id="video" autoplay></video>
+    <button id="capture-btn" class="btn btn-dark cap-btn mt-3"><i class="fa-solid fa-camera"></i></button>
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <!-- Poster with the Uploaded Template -->
+  <div id="poster-section" class="poster">
+    <img class="tmp" src="images/tm1.png" alt="Poster Template">
+    <img id="captured-image" class="captured-image" alt="Captured Selfie">
+    <img class="ai-tcr" src="images/WhatsApp_Image_2024-10-22_at_16.27.30_cbdd1f5e-removebg-preview.png" alt="">
+    <button id="retake-btn" class="btn btn-danger mt-3">Create Another</button> <button onclick="print()">Print</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script src="bootstrap.js"></script>
+<script src="https://haseefmuhammed.github.io/Haseef-Swift/haseef-swift-og.js"></script>
+<script src="https://kit.fontawesome.com/3945bc0b8d.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+.ai-tcr{
+  position: absolute;
+  top: 23%;
+  width: revert;
+  left: 37%;
+  display: inline-block;
+}
+
+    /* Global body styling */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f8f9fa;
+      background-image: url("images/bg.jpg");
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    
+    /* Poster styling */
+    .poster {
+      position: relative;
+      width: 768px; /* Fixed width for the poster */
+      margin: 20px auto;
+      display: none; /* Initially hidden */
+      animation: fadeIn 1s ease-in-out;
+    }
+    
+    .poster img {
+      width: 100%;
+    }
+    
+    /* Captured image styling */
+    .captured-image {
+      position: absolute;
+        top: 26%;
+        left: 0%;
+        width: 70%;
+        height: 50%;
+        object-fit: cover;
+        border: 5px solid rgb(243, 169, 8);
+    }
+    
+    /* Camera container styling */
+    .camera-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+    
+    video {
+      display: block;
+      margin: 10px auto;
+      max-width: 100%; /* Ensures the video is responsive */
+      border: 8px solid #0aeb60;
+      border-radius: 8px;
+    }
+    
+    canvas {
+      display: none; /* Hidden canvas for capturing */
+    }
+    
+    /* Fade animations */
+    .fade {
+      animation: fadeOut 0.5s ease-in-out forwards;
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+    }
+    
+    /* Button styling */
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff; /* Blue background */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+    }
+    .temp{
+      border: 3px solid white;
+    }
+    .cap-btn{
+      width: 40%;
+      height: 3em;
+      font-size: 2em;
+    }
