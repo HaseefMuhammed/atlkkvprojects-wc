@@ -23,56 +23,57 @@ document.getElementById('reveal-score').addEventListener('click', revealScore);
 
 const questions = [
     {
-        question: "Which programming language is commonly used for artificial intelligence?",
-        options: ["COBOL", "Ruby", "Python", "Java"],
-        answer: "Python"
+        question: "Which of these is used in virtual reality (VR) devices?",
+        options: ["Headsets with 3D visuals", "Paper glasses", "Plastic goggles", "A regular mirror"],
+        answer: "Headsets with 3D visuals"
     },
     {
-        question: "Which device is primarily used to connect a computer to a network?",
-        options: ["Monitor", "Router", "Printer", "Keyboard"],
-        answer: "Router"
+        question: "What is the primary purpose of cloud storage?",
+        options: ["To back up files to USB drives", "To collect rainwater", "To store files on paper", "To save files online and access them from anywhere"],
+        answer: "To save files online and access them from anywhere"
     },
     {
-        question: "What does the term 'cloud computing' refer to?",
-        options: ["Using physical servers for computing", "Delivering computing services over the Internet", "Storing data on local drives", "Running applications offline"],
-        answer: "Delivering computing services over the Internet"
+        question: "What is the main function of a GPS?",
+        options: ["To check the internet speed", "To measure the weather", "To provide location and navigation", "To store phone numbers"],
+        answer: "To provide location and navigation"
     },
     {
-      question: "Which of the following is a type of malware?",
-      options: ["Antivirus", "Firewall", "Trojan Horse", "Router"],
-      answer: "Trojan Horse"
-  },
-  {
-    question: "Which technology is used in Bluetooth?",
-    options: ["Radio waves", "Infrared waves", "Fiber optics", "Satellite signals"],
-    answer: "Radio waves"
-  },
-  {
-  question: "Which of the following is a database management system?",
-  options: ["Apache", "MySQL", "HTML", "CSS"],
-  answer: "MySQL"
-  },
-  {
-  question: "What is the term for unsolicited emails sent in bulk?",
-  options: ["Junk Mail", "Spam", "Phishing", "Worm"],
-  answer: "Spam"
-  },
-  {
-  question: "Which of the following is a type of cyberattack?",
-  options: ["Phishing", "LCrowdsourcing", "Data mining", "Booting"],
-  answer: "Phishing"
-  },
-  {
-    question: "What is the function of an IP address?",
-    options: ["To encrypt data", "To identify devices on a network", "To speed up the Internet connection", "To store website data"],
-    answer: "To identify devices on a network"
+        question: "What is the purpose of an AI-powered recommendation system?",
+        options: ["To suggest movies, songs, or products based on user preferences", "To clean computer screens", "To fix broken gadgets", "To predict the weather"],
+        answer: "To suggest movies, songs, or products based on user preferences"
     },
     {
-      question: "Which of the following is a markup language?",
-      options: ["PHP", "HTML", "C++", "Python"],
-      answer: "HTML"
-      }
+        question: "Which of these is used for detecting short circuits?",
+        options: ["Relay modules and Arduino", "A regular wire cutter", "A plastic ruler", "A solar panel"],
+        answer: "Relay modules and Arduino"
+    },
+    {
+        question: "What is a smart grid used for?",
+        options: ["Building roads", "Managing and distributing electricity efficiently", "Connecting water pipelines", "Growing plants faster"],
+        answer: "Managing and distributing electricity efficiently"
+    },
+    {
+        question: "What does a LiDAR sensor do?",
+        options: ["Cooks food faster", "Creates a 3D print", "Detects sounds in a room", "Measures distances using lasers"],
+        answer: "Measures distances using lasers"
+    },
+    {
+        question: "Which of these is a renewable energy source?",
+        options: ["Solar energy", "Gasoline", "Coal", "Nuclear fuel"],
+        answer: "Solar energy"
+    },
+    {
+        question: "What is the purpose of a smart SOS system?",
+        options: ["To track food orders", "To provide quick help during emergencies", "To connect to Bluetooth speakers", "To guide tourists"],
+        answer: "To provide quick help during emergencies"
+    },
+    {
+        question: "What is the main use of a robotic arm in factories?",
+        options: ["To give employees breaks", "To print bills", "To clean the floors", "To assemble parts and carry heavy objects"],
+        answer: "To assemble parts and carry heavy objects"
+    }
 ];
+
 
 let shuffledQuestions, currentQuestionIndex, score, timerInterval, timeLeft;
 

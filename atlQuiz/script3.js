@@ -23,56 +23,57 @@ document.getElementById('reveal-score').addEventListener('click', revealScore);
 
 const questions = [
     {
-        question: "Which of the following is not a type of software license?",
-        options: ["Freeware", "Openware", "Shareware", "Proprietary"],
-        answer: "Openware"
+        question: "What is the function of an ESP8266?",
+        options: ["Act as a portable battery", "Connect devices to the internet", "Make robots walk", "Store music files"],
+        answer: "Connect devices to the internet"
     },
     {
-        question: "Which technology is used in contactless payment systems?",
-        options: ["NFC", "GPS", "LTE", "DSL"],
-        answer: "NFC"
+        question: "What does a smart irrigation system do?",
+        options: ["Waters plants automatically based on soil moisture", "Monitors weather patterns", "Measures plant growth", "Creates fertilizers"],
+        answer: "Waters plants automatically based on soil moisture"
     },
     {
-        question: "What is the main purpose of a VPN?",
-        options: ["To increase Internet speed", "To secure connections over a public network", "To store large amounts of data", "To monitor network traffic"],
-        answer: "To secure connections over a public network"
+        question: "What is the purpose of RFID chips?",
+        options: ["To clean surfaces", "To store music", "To power electric cars", "To track and identify objects or people"],
+        answer: "To track and identify objects or people"
     },
     {
-      question: "Which of the following is a frontend development framework?",
-      options: ["Node.js", "Django", "Angular", "Ruby on Rails"],
-      answer: "Angular"
-  },
-  {
-    question: "Which company developed the Android operating system?",
-    options: ["Apple", "Google", "Microsoft", "IBM"],
-    answer: "Google"
-  },
-  {
-  question: "Which of the following is a common protocol for sending email?",
-  options: ["HTTP", "FTP", "SMTP", "TCP"],
-  answer: "SMTP"
-  },
-  {
-  question: "What does the acronym 'IoT' stand for?",
-  options: ["Internet of Technology", "Input/Output Transmission", "Internet of Things", "Internal Operating Time"],
-  answer: "Internet of Things"
-  },
-  {
-  question: "Which of the following is an example of an operating system?",
-  options: ["Chrome", "Ubuntu", "Java", "SQL"],
-  answer: "Ubuntu"
-  },
-  {
-    question: "Which of the following is not an input device?",
-    options: ["Keyboard", "Mouse", "Monitor", "Scanner"],
-    answer: "Monitor"
+        question: "What does a chatbot do?",
+        options: ["Cooks food for people", "Answers questions and chats with users", "Repairs mobile phones", "Creates documents"],
+        answer: "Answers questions and chats with users"
     },
     {
-      question: "Which technology is used to connect devices wirelessly within a short range?",
-      options: ["Wi-Fi", "Ethernet", "Bluetooth", "Fiber optics"],
-      answer: "Bluetooth"
-      }
+        question: "Which sensor is used in a rainwater alert system?",
+        options: ["Rain sensor", "Light sensor", "Sound sensor", "Motion sensor"],
+        answer: "Rain sensor"
+    },
+    {
+        question: "What is an autonomous drone capable of?",
+        options: ["Cleaning oceans", "Building houses", "Running on the road", "Flying and completing tasks without human control"],
+        answer: "Flying and completing tasks without human control"
+    },
+    {
+        question: "What is the role of artificial intelligence in healthcare?",
+        options: ["Cleaning hospital floors", "Diagnosing diseases faster", "Writing medical books", "Making medicines manually"],
+        answer: "Diagnosing diseases faster"
+    },
+    {
+        question: "What does a smart traffic management system do?",
+        options: ["Controls traffic lights based on real-time traffic conditions", "Parks cars for drivers", "Stops pedestrians from crossing", "Repairs damaged roads"],
+        answer: "Controls traffic lights based on real-time traffic conditions"
+    },
+    {
+        question: "What is an example of a smart wearable device?",
+        options: ["A paper bracelet", "A wristband without sensors", "A smartwatch", "A leather wallet"],
+        answer: "A smartwatch"
+    },
+    {
+        question: "What is the function of a thermal camera?",
+        options: ["Detect heat and display temperature differences", "Take high-resolution selfies", "Record videos in slow motion", "Take low-resolution selfies"],
+        answer: "Detect heat and display temperature differences"
+    }
 ];
+
 
 let shuffledQuestions, currentQuestionIndex, score, timerInterval, timeLeft;
 

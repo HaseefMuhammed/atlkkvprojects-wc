@@ -23,56 +23,57 @@ document.getElementById('reveal-score').addEventListener('click', revealScore);
 
 const questions = [
     {
-        question: "ഇസ്ലാമിന്റെ വിശുദ്ധ ഗ്രന്ഥം ഏതാണ്?",
-        options: ["തൗറത്ത്", "ഖുര്‍ആന്‍", "ബൈബിൾ", "വേദങ്ങൾ"],
-        answer: "ഖുര്‍ആന്‍"
+        question: "Which programming language is used to create web pages?",
+        options: ["HTML", "Python", "Java", "C++"],
+        answer: "HTML"
     },
     {
-        question: "വിശ്വാസത്തിന്റെ പ്രഖ്യാപനം എന്താണ്?",
-        options: ["സകാത്", "ഷഹാദ", "സലാത്ത്", "ഹജ്ജ്"],
-        answer: "ഷഹാദ"
+        question: "What is the purpose of a smart thermostat?",
+        options: ["To store energy for future use", "To wash clothes faster", "To play music in the room", "To control the temperature of a house automatically"],
+        answer: "To control the temperature of a house automatically"
     },
     {
-        question: "ഇസ്ലാമിലെ എത്ര സ്തംഭങ്ങൾ (അടിസ്ഥാന സിദ്ധാന്തങ്ങൾ) ഉണ്ട്?",
-        options: ["മൂന്ന്", "നാല്", "അഞ്ച്", "ആറ്"],
-        answer: "അഞ്ച്"
+        question: "Which device uses IoT to monitor health?",
+        options: ["A fitness tracker", "A regular wall clock", "A microwave oven", "A textbook"],
+        answer: "A fitness tracker"
     },
     {
-        question: "മുസ്ലിംമാർ പ്രാർത്ഥിക്കുമ്പോൾ ഏത് ദിശയിലാണ് തിരിഞ്ഞുനിൽക്കുന്നത്?",
-        options: ["കിഴക്ക്", "തെക്ക്", "മക്ക", "യെരുശലേം"],
-        answer: "മക്ക"
+        question: "What is the use of a Raspberry Pi?",
+        options: ["To store large amounts of data", "To play video games only", "To learn coding and build small electronics projects", "To bake pies"],
+        answer: "To learn coding and build small electronics projects"
     },
     {
-        question: "ഇസ്ലാമിലെ ഉപവാസ മാസമേത്?",
-        options: ["മുഹറം", "റമദാൻ", "ശവ്വാൽ", "ദുൽ-ഹിജ്ജ"],
-        answer: "റമദാൻ"
+        question: "What is a drone used for?",
+        options: ["Growing crops in fields", "Flying as a passenger vehicle", "Capturing aerial photos and videos", "Writing software programs"],
+        answer: "Capturing aerial photos and videos"
     },
     {
-        question: "'സകാത്' എന്തിനെയാണ് സൂചിപ്പിക്കുന്നത്?",
-        options: ["പ്രാർത്ഥന", "ദാനം", "ഉപവാസം", "തീർഥാടനവും"],
-        answer: "ദാനം"
+        question: "Which technology helps cars drive by themselves?",
+        options: ["Manual gears", "Autonomous driving systems", "Analog clocks", "Paper maps"],
+        answer: "Autonomous driving systems"
     },
     {
-        question: "മുസ്ലിംമാർക്ക് പ്രധാനപ്പെട്ട ഒരു പണ്ടിഗയേത്?",
-        options: ["ബക്രിദ്", "ഇദുൽ ഫിത്വർ", "ക്രിസ്മസ്", "ദിവാളി"],
-        answer: "ഇദുൽ ഫിത്വർ"
+        question: "What is the main use of blockchain technology?",
+        options: ["To charge mobile phones", "To print documents", "To securely store and transfer data", "To create music"],
+        answer: "To securely store and transfer data"
     },
     {
-        question: "മക്കയിലേക്ക് നടത്തുന്ന തീർഥാടനം എന്താണ്?",
-        options: ["ഹജ്ജ്", "ഉംറ", "ത്വവാഫ്", "തക്ക്വ"],
-        answer: "ഹജ്ജ്"
+        question: "What is a 3D printer used for?",
+        options: ["Recording videos", "Printing text on paper", "Printing three-dimensional objects", "Designing posters"],
+        answer: "Printing three-dimensional objects"
     },
     {
-        question: "ഇസ്ലാമിലെ അവസാന പ്രവാചകൻ ആരാണ്?",
-        options: ["അബ്രാഹിം", "മൂസ", "മുഹമ്മദ്", "ഈസ"],
-        answer: "മുഹമ്മദ്"
+        question: "Which of these is an example of machine learning?",
+        options: ["A chatbot learning to respond better over time", "A calculator solving math equations", "A clock showing the current time", "A fan rotating at the same speed"],
+        answer: "A chatbot learning to respond better over time"
     },
     {
-        question: "ഇസ്ലാമിലെ ദൈവത്തെ എന്താണ് വിളിക്കുന്നത്?",
-        options: ["അല്ലാഹ്", "ബാഹ്മ", "എലോഹീം", "അദൊനായ്"],
-        answer: "അല്ലാഹ്"
+        question: "What does a microcontroller like Arduino do?",
+        options: ["Acts as a TV remote", "Controls electronic devices based on programming", "Stores books and movies", "Cleans a room automatically"],
+        answer: "Controls electronic devices based on programming"
     }
 ];
+
 
 
 let shuffledQuestions, currentQuestionIndex, score, timerInterval, timeLeft;
