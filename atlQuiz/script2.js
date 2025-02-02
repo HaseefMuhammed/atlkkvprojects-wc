@@ -47,26 +47,26 @@ const questions = [
         options: ["Relay modules and Arduino", "A regular wire cutter", "A plastic ruler", "A solar panel"],
         answer: "Relay modules and Arduino"
     },
-    {
-        question: "What is a smart grid used for?",
-        options: ["Building roads", "Managing and distributing electricity efficiently", "Connecting water pipelines", "Growing plants faster"],
-        answer: "Managing and distributing electricity efficiently"
-    },
-    {
-        question: "What does a LiDAR sensor do?",
-        options: ["Cooks food faster", "Creates a 3D print", "Detects sounds in a room", "Measures distances using lasers"],
-        answer: "Measures distances using lasers"
-    },
-    {
-        question: "Which of these is a renewable energy source?",
-        options: ["Solar energy", "Gasoline", "Coal", "Nuclear fuel"],
-        answer: "Solar energy"
-    },
-    {
-        question: "What is the purpose of a smart SOS system?",
-        options: ["To track food orders", "To provide quick help during emergencies", "To connect to Bluetooth speakers", "To guide tourists"],
-        answer: "To provide quick help during emergencies"
-    },
+    // {
+    //     question: "What is a smart grid used for?",
+    //     options: ["Building roads", "Managing and distributing electricity efficiently", "Connecting water pipelines", "Growing plants faster"],
+    //     answer: "Managing and distributing electricity efficiently"
+    // },
+    // {
+    //     question: "What does a LiDAR sensor do?",
+    //     options: ["Cooks food faster", "Creates a 3D print", "Detects sounds in a room", "Measures distances using lasers"],
+    //     answer: "Measures distances using lasers"
+    // },
+    // {
+    //     question: "Which of these is a renewable energy source?",
+    //     options: ["Solar energy", "Gasoline", "Coal", "Nuclear fuel"],
+    //     answer: "Solar energy"
+    // },
+    // {
+    //     question: "What is the purpose of a smart SOS system?",
+    //     options: ["To track food orders", "To provide quick help during emergencies", "To connect to Bluetooth speakers", "To guide tourists"],
+    //     answer: "To provide quick help during emergencies"
+    // },
     {
         question: "What is the main use of a robotic arm in factories?",
         options: ["To give employees breaks", "To print bills", "To clean the floors", "To assemble parts and carry heavy objects"],
@@ -95,7 +95,7 @@ function resetQuiz() {
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
     score = 0;
-    timeLeft = 120;
+    timeLeft = 60;
     document.getElementById('time').textContent = timeLeft;
     timerInterval = setInterval(updateTimer, 1000);
 }

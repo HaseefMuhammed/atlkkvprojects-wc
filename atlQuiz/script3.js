@@ -47,26 +47,26 @@ const questions = [
         options: ["Rain sensor", "Light sensor", "Sound sensor", "Motion sensor"],
         answer: "Rain sensor"
     },
-    {
-        question: "What is an autonomous drone capable of?",
-        options: ["Cleaning oceans", "Building houses", "Running on the road", "Flying and completing tasks without human control"],
-        answer: "Flying and completing tasks without human control"
-    },
-    {
-        question: "What is the role of artificial intelligence in healthcare?",
-        options: ["Cleaning hospital floors", "Diagnosing diseases faster", "Writing medical books", "Making medicines manually"],
-        answer: "Diagnosing diseases faster"
-    },
-    {
-        question: "What does a smart traffic management system do?",
-        options: ["Controls traffic lights based on real-time traffic conditions", "Parks cars for drivers", "Stops pedestrians from crossing", "Repairs damaged roads"],
-        answer: "Controls traffic lights based on real-time traffic conditions"
-    },
-    {
-        question: "What is an example of a smart wearable device?",
-        options: ["A paper bracelet", "A wristband without sensors", "A smartwatch", "A leather wallet"],
-        answer: "A smartwatch"
-    },
+    // {
+    //     question: "What is an autonomous drone capable of?",
+    //     options: ["Cleaning oceans", "Building houses", "Running on the road", "Flying and completing tasks without human control"],
+    //     answer: "Flying and completing tasks without human control"
+    // },
+    // {
+    //     question: "What is the role of artificial intelligence in healthcare?",
+    //     options: ["Cleaning hospital floors", "Diagnosing diseases faster", "Writing medical books", "Making medicines manually"],
+    //     answer: "Diagnosing diseases faster"
+    // },
+    // {
+    //     question: "What does a smart traffic management system do?",
+    //     options: ["Controls traffic lights based on real-time traffic conditions", "Parks cars for drivers", "Stops pedestrians from crossing", "Repairs damaged roads"],
+    //     answer: "Controls traffic lights based on real-time traffic conditions"
+    // },
+    // {
+    //     question: "What is an example of a smart wearable device?",
+    //     options: ["A paper bracelet", "A wristband without sensors", "A smartwatch", "A leather wallet"],
+    //     answer: "A smartwatch"
+    // },
     {
         question: "What is the function of a thermal camera?",
         options: ["Detect heat and display temperature differences", "Take high-resolution selfies", "Record videos in slow motion", "Take low-resolution selfies"],
@@ -95,7 +95,7 @@ function resetQuiz() {
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
     score = 0;
-    timeLeft = 120;
+    timeLeft = 60;
     document.getElementById('time').textContent = timeLeft;
     timerInterval = setInterval(updateTimer, 1000);
 }

@@ -47,26 +47,26 @@ const questions = [
         options: ["Growing crops in fields", "Flying as a passenger vehicle", "Capturing aerial photos and videos", "Writing software programs"],
         answer: "Capturing aerial photos and videos"
     },
-    {
-        question: "Which technology helps cars drive by themselves?",
-        options: ["Manual gears", "Autonomous driving systems", "Analog clocks", "Paper maps"],
-        answer: "Autonomous driving systems"
-    },
-    {
-        question: "What is the main use of blockchain technology?",
-        options: ["To charge mobile phones", "To print documents", "To securely store and transfer data", "To create music"],
-        answer: "To securely store and transfer data"
-    },
-    {
-        question: "What is a 3D printer used for?",
-        options: ["Recording videos", "Printing text on paper", "Printing three-dimensional objects", "Designing posters"],
-        answer: "Printing three-dimensional objects"
-    },
-    {
-        question: "Which of these is an example of machine learning?",
-        options: ["A chatbot learning to respond better over time", "A calculator solving math equations", "A clock showing the current time", "A fan rotating at the same speed"],
-        answer: "A chatbot learning to respond better over time"
-    },
+    // {
+    //     question: "Which technology helps cars drive by themselves?",
+    //     options: ["Manual gears", "Autonomous driving systems", "Analog clocks", "Paper maps"],
+    //     answer: "Autonomous driving systems"
+    // },
+    // {
+    //     question: "What is the main use of blockchain technology?",
+    //     options: ["To charge mobile phones", "To print documents", "To securely store and transfer data", "To create music"],
+    //     answer: "To securely store and transfer data"
+    // },
+    // {
+    //     question: "What is a 3D printer used for?",
+    //     options: ["Recording videos", "Printing text on paper", "Printing three-dimensional objects", "Designing posters"],
+    //     answer: "Printing three-dimensional objects"
+    // },
+    // {
+    //     question: "Which of these is an example of machine learning?",
+    //     options: ["A chatbot learning to respond better over time", "A calculator solving math equations", "A clock showing the current time", "A fan rotating at the same speed"],
+    //     answer: "A chatbot learning to respond better over time"
+    // },
     {
         question: "What does a microcontroller like Arduino do?",
         options: ["Acts as a TV remote", "Controls electronic devices based on programming", "Stores books and movies", "Cleans a room automatically"],
@@ -96,7 +96,7 @@ function resetQuiz() {
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
     score = 0;
-    timeLeft = 120;
+    timeLeft = 60;
     document.getElementById('time').textContent = timeLeft;
     timerInterval = setInterval(updateTimer, 1000);
 }
