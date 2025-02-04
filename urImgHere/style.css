@@ -11,7 +11,8 @@
       font-family: Arial, sans-serif;
       text-align: center;
       background-color: #f8f9fa;
-      background-image: url("images/bg.jpg");
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      url("images/bg2.png") no-repeat center/cover;
       background-position: center;
       background-size: cover;
       background-attachment: fixed;
@@ -106,5 +107,33 @@
     .cap-btn{
       width: 40%;
       height: 3em;
+      font-size: 2em;
+    }
+    
+    /* QR */
+    .qr{
+      width: 30%;
+    }
+
+    /* DIalog */
+    dialog{
+      border-radius: 10px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    dialog p{
+      font-size: 1.5em;
+    }
+
+    .cap-btn{
+      border: 4px solid #0aeb60;
+    }
+
+    /* actionbtns */
+    .actionbtns{
+      background-color: #3333337a;
+      margin-top: 1em;
+      border-radius: 5px;
+    }
+    .actionbtns button{
       font-size: 2em;
     }

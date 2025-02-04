@@ -40,3 +40,21 @@ retakeBtn.addEventListener('click', () => {
   cameraSection.classList.remove('fade');
   cameraSection.style.display = 'flex';
 });
+
+// Dialog
+
+const dialog = document.querySelector("dialog");
+const showButton = document.querySelector("dialog + button");
+const closeButton = document.querySelector("dialog button");
+
+const shareBtn = document.getElementById("share-btn");
+
+// Open the dialog when the share button is clicked
+shareBtn.addEventListener("click", () => {
+  dialog.showModal();
+});
+
+// Close the dialog when the close button is clicked
+closeButton.addEventListener("click", () => {
+  dialog.close();
+});
